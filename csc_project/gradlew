@@ -1,0 +1,14 @@
+#!/bin/sh
+
+#set -e
+
+# Gradle wrapper script for Unix-like operating systems
+
+# Location of the Gradle installation
+GRADLE_DIR=$(dirname "$(dirname "$0")")
+
+# Change to the Gradle installation directory
+cd "$GRADLE_DIR"
+
+# Execute Gradle with the specified parameters
+exec ./gradle "${@}"
