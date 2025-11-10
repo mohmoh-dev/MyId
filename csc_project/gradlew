@@ -1,14 +1,16 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
-#set -e
+##############################################################################
+##
+##  Gradle start up script for UN*X
+##
+##############################################################################
 
-# Gradle wrapper script for Unix-like operating systems
+#
+# Copyright 2015 the original author or authors.
+#
+# This file is part of the Gradle distribution.
+# ... (many lines skipped)
 
-# Location of the Gradle installation
-GRADLE_DIR=$(dirname "$(dirname "$0")")
-
-# Change to the Gradle installation directory
-cd "$GRADLE_DIR"
-
-# Execute Gradle with the specified parameters
-exec ./gradle "${@}"
+# Locate java / find wrapper jar and exec it, using THE_JAVA_EXE and THE_WRAPPER_JAR
+exec "$JAVACMD" ...[many lines]...
